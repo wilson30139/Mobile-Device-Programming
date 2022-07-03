@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9DDCEC">
+
+    <TextView
+        android:id="@+id/tv_input_number1"
+        android:layout_width="144dp"
+        android:layout_height="31dp"
+        android:text="Input number A:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <TextView
+        android:id="@+id/tv_input_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Input number B:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_input_number1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_input_number1" />
+
+    <EditText
+        android:id="@+id/et_input_number1"
+        android:layout_width="76dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_input_number1"
+        app:layout_constraintTop_toTopOf="@+id/tv_input_number1" />
+
+    <EditText
+        android:id="@+id/et_input_number2"
+        android:layout_width="76dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/et_input_number1"
+        app:layout_constraintTop_toBottomOf="@+id/et_input_number1" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF81"
+        android:text="ADD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:background="#7BD248"
+        android:text="MUL"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/btn_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
